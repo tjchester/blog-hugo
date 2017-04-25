@@ -1,0 +1,14 @@
+baseURL = "http://tjchester.github.io/"
+languageCode = "en-us"
+title = "Thomas Chester's Blog"
+theme = "hugo_theme_robust"
+paginate = 6
+googleAnalytics = "" # Optional
+disqusShortname = ""
+
+[params]
+  dateformat = "January 2, 2006" # Optional
+  
+  googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" 
+  fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" 
+  logofontfamily = "Lobster, cursive"
