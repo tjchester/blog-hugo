@@ -17,4 +17,4 @@ coverage*.out
 GoBuilds
 dist
 
-public
+public/*
