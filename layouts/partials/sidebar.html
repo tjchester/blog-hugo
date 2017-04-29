@@ -1,0 +1,28 @@
+<aside class="l-sidebar">
+
+  <div class="sections sidebar">
+    <section class="sidebar">
+      <header>RECENT POSTS</header>
+      <div>
+        <div class="articles sm">
+          {{ range $i, $p := (first 5 .Site.Pages) }}
+          {{ .Render "li_sm" }}
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    {{ range $key, $value := .Site.Taxonomies }}
+    <section class="sidebar">
+      <hr>
+      <header>{{ $key | upper }}</header>
+      <div>
+        <ul class="terms">
+          {{ range first 10 $value.ByCount }}<li><a href="{{ $.Site.BaseURL}}{{ $key }}/{{ .Name | urlize }}">{{ .Name }}</a></li>{{ end }}
+        </ul>
+      </div>
+    </section>
+    {{ end }}
+  </div>
+
+</aside>
